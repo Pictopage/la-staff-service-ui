@@ -5,6 +5,4 @@ export class Staff {
   profileSummary: string;
   role: string;
   payRate: string;
-  mileage: string;
-  completeTraining: string[];
 }
