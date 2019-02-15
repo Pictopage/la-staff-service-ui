@@ -1,6 +1,5 @@
 html,
 body,
-header,
 #intro {
   height: 100%;
 }
@@ -11,4 +10,8 @@ header,
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+body {
+  padding-top: 70px;
 }
