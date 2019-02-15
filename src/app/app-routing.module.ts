@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {StaffComponent} from './staff/staff.component';
+import {StaffComponent} from './ui/staff/staff.component';
 
 const routes: Routes = [
   {path: 'staff', component: StaffComponent}
