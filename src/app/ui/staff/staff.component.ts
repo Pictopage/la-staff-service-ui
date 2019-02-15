@@ -19,10 +19,7 @@ export class StaffComponent implements OnInit {
 
   getAllStaffMembers() {
     this.staffService.getStaffMembers().subscribe(
-      staff => {
-        this.staffMembers = staff;
-        console.log(this.staffMembers);
-      }
+      staff => this.staffMembers = staff
     );
   }
 
