@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {StaffService} from './staff.service';
+import {Staff} from './staff';
 
 @Component({
   selector: 'app-staff',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StaffComponent implements OnInit {
 
-  constructor() { }
+  staffMembers: Staff[];
+
+  constructor(private staffService: StaffService) { }
 
   ngOnInit() {
+    this.getAllStaffMembers();
+  }
+
+  getAllStaffMembers() {
+    this.staffService.getStaffMembers().subscribe(
+      staff => {
+        this.staffMembers = staff;
+        console.log(this.staffMembers);
+      }
+    );
   }
 
 }
