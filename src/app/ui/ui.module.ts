@@ -6,9 +6,10 @@ import { FooterComponent } from './footer/footer.component';
 import {RouterModule} from '@angular/router';
 import {StaffComponent} from './staff/staff.component';
 import {StaffService} from './staff/staff.service';
+import { ClientComponent } from './client/client.component';
 
 @NgModule({
-  declarations: [LayoutComponent, HeaderComponent, FooterComponent, StaffComponent],
+  declarations: [LayoutComponent, HeaderComponent, FooterComponent, StaffComponent, ClientComponent],
   imports: [
     CommonModule,
     RouterModule
