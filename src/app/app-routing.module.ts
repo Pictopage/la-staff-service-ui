@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {StaffComponent} from './ui/staff/staff.component';
 
 const routes: Routes = [
+  {path: '', component: StaffComponent},
   {path: 'staff', component: StaffComponent}
 ];
 
