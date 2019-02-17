@@ -7,6 +7,7 @@ import {RouterModule} from '@angular/router';
 import {StaffComponent} from './staff/staff.component';
 import {StaffService} from './staff/staff.service';
 import { ClientComponent } from './client/client.component';
+import {ClientService} from './client/client.service';
 
 @NgModule({
   declarations: [LayoutComponent, HeaderComponent, FooterComponent, StaffComponent, ClientComponent],
@@ -18,7 +19,8 @@ import { ClientComponent } from './client/client.component';
     LayoutComponent
   ],
   providers: [
-    StaffService
+    StaffService,
+    ClientService
   ]
 })
 export class UiModule { }

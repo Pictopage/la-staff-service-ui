@@ -5,7 +5,7 @@ import {Observable, of} from 'rxjs';
 @Injectable()
 export class StaffService {
 
-  staffMembers: Staff[] = [
+  private staffMembers: Staff[] = [
     {
       id: 1,
       name: 'Thomas',
