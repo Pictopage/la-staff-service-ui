@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ClientService} from './client.service';
+import {Client} from './client';
 
 @Component({
   selector: 'app-client',
@@ -7,6 +8,8 @@ import {ClientService} from './client.service';
   styleUrls: ['./client.component.css']
 })
 export class ClientComponent implements OnInit {
+
+  clientMembers: Client[];
 
   constructor(private clientService: ClientService) { }
 
@@ -16,7 +19,9 @@ export class ClientComponent implements OnInit {
 
   retrieveAllClients() {
     this.clientService.getAllClients()
-      .subscribe()
+      .subscribe(
+        client => this.clientMembers = client
+      );
   }
 
 }
