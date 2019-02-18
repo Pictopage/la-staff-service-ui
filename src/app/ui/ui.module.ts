@@ -8,9 +8,10 @@ import {StaffComponent} from './staff/staff.component';
 import {StaffService} from './staff/staff.service';
 import { ClientComponent } from './client/client.component';
 import {ClientService} from './client/client.service';
+import { ReportComponent } from './report/report.component';
 
 @NgModule({
-  declarations: [LayoutComponent, HeaderComponent, FooterComponent, StaffComponent, ClientComponent],
+  declarations: [LayoutComponent, HeaderComponent, FooterComponent, StaffComponent, ClientComponent, ReportComponent],
   imports: [
     CommonModule,
     RouterModule
