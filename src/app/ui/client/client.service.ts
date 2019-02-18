@@ -1,6 +1,8 @@
 import {Observable, of} from 'rxjs';
 import {Client} from './client';
+import {Injectable} from '@angular/core';
 
+@Injectable()
 export class ClientService {
 
   private clientMembers: Client[] = [

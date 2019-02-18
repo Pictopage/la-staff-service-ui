@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Report} from './report';
+import {Observable} from 'rxjs';
+import {ReportService} from './report.service';
 
 @Component({
   selector: 'app-report',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReportComponent implements OnInit {
 
-  constructor() { }
+  allReports: Report[];
+
+  constructor(private reportService: ReportService) { }
 
   ngOnInit() {
+  }
+
+  private getAllReports(): Observable<Report[]> {
+    return this.reportService.getAllReports();
   }
 
 }

@@ -2,7 +2,6 @@ export class Report {
   id: string;
   groupId: string;
   groupType: string;
-  numOfHours: string;
+  numberOfHours: string;
   missedCalls: string;
-
 }
