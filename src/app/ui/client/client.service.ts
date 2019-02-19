@@ -78,7 +78,7 @@ export class ClientService {
     return of(this.clientMembers);
   }
 
-  getClient(id: string): Observable<Client> {
-    return of(this.clientMembers.find(client => client.id === id));
+  getClient(id: number): Observable<Client> {
+    return of(this.clientMembers.find(client => Number(client.id) === id));
   }
 }

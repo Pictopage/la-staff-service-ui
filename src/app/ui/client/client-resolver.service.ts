@@ -11,7 +11,7 @@ export class ClientResolver implements Resolve<Client> {
   constructor(private clientService: ClientService, router: Router) { }
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<Client> | Client {
-    const id = route.params['id'];
+    const id = +route.params['id'];
     return this.clientService.getClient(id);
   }
 
