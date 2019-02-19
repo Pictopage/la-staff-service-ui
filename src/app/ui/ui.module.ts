@@ -13,6 +13,7 @@ import {HomeComponent} from './home/home.component';
 import {ReportService} from './report/report.service';
 import {ClientDetailComponent} from './client/client-detail/client-detail.component';
 import {ClientResolver} from './client/client-resolver.service';
+import {Client} from './client/client';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import {ClientResolver} from './client/client-resolver.service';
   ],
   providers: [
     StaffService,
+    Client,
     ClientService,
     ReportService,
     ClientResolver
