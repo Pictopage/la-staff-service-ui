@@ -4,11 +4,21 @@ import {StaffComponent} from './ui/staff/staff.component';
 import {ClientComponent} from './ui/client/client.component';
 import {ReportComponent} from './ui/report/report.component';
 import {HomeComponent} from './ui/home/home.component';
+import {ClientDetailComponent} from './ui/client/client-detail/client-detail.component';
+import {ClientResolver} from './ui/client/client-resolver.service';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'staff', component: StaffComponent},
-  {path: 'clients', component: ClientComponent},
+  {
+    path: 'clients', component: ClientComponent,
+    children: [
+      {
+        path: ':id', component: ClientDetailComponent,
+        resolve: {client: ClientResolver}
+      }
+    ]
+  },
   {path: 'reports', component: ReportComponent}
 ];
 
