@@ -10,6 +10,7 @@ import { ClientComponent } from './client/client.component';
 import {ClientService} from './client/client.service';
 import { ReportComponent } from './report/report.component';
 import { HomeComponent } from './home/home.component';
+import {ReportService} from './report/report.service';
 
 @NgModule({
   declarations: [LayoutComponent, HeaderComponent, FooterComponent, StaffComponent, ClientComponent, ReportComponent, HomeComponent],
@@ -22,7 +23,8 @@ import { HomeComponent } from './home/home.component';
   ],
   providers: [
     StaffService,
-    ClientService
+    ClientService,
+    ReportService
   ]
 })
 export class UiModule { }

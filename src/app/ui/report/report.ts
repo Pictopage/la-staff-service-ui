@@ -4,4 +4,5 @@ export class Report {
   groupType: string;
   numberOfHours: string;
   missedCalls: string;
+  region: string;
 }
