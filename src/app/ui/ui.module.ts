@@ -6,14 +6,14 @@ import {FooterComponent} from './footer/footer.component';
 import {RouterModule} from '@angular/router';
 import {StaffComponent} from './staff/staff.component';
 import {StaffService} from './staff/staff.service';
-import {ClientComponent} from './client/client.component';
-import {ClientService} from './client/client.service';
+import {ClientComponent} from './clients/client.component';
+import {ClientService} from './clients/client.service';
 import {ReportComponent} from './report/report.component';
 import {HomeComponent} from './home/home.component';
 import {ReportService} from './report/report.service';
-import {ClientDetailComponent} from './client/client-detail/client-detail.component';
-import {ClientResolver} from './client/client-resolver.service';
-import {Client} from './client/client';
+import {ClientDetailComponent} from './clients/client-detail/client-detail.component';
+import {ClientResolver} from './clients/client-resolver.service';
+import {Client} from './clients/client';
 
 @NgModule({
   declarations: [
