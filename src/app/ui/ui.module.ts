@@ -6,7 +6,7 @@ import {FooterComponent} from './footer/footer.component';
 import {RouterModule} from '@angular/router';
 import {StaffComponent} from './staff/staff.component';
 import {StaffService} from './staff/staff.service';
-import {ClientComponent} from './clients/client.component';
+import {ClientsComponent} from './clients/clients.component';
 import {ClientService} from './clients/client.service';
 import {ReportComponent} from './report/report.component';
 import {HomeComponent} from './home/home.component';
@@ -14,6 +14,7 @@ import {ReportService} from './report/report.service';
 import {ClientDetailComponent} from './clients/client-detail/client-detail.component';
 import {ClientResolver} from './clients/client-resolver.service';
 import {Client} from './clients/client';
+import {ClientComponent} from './clients/client/client.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import {Client} from './clients/client';
     HeaderComponent,
     FooterComponent,
     StaffComponent,
+    ClientsComponent,
     ClientComponent,
     ReportComponent,
     HomeComponent,
@@ -29,7 +31,7 @@ import {Client} from './clients/client';
     CommonModule,
     RouterModule.forChild(
       [
-        {path: 'client', component: ClientComponent}
+        {path: 'client', component: ClientsComponent}
       ]
     )
   ],
