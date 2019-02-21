@@ -4,10 +4,10 @@ import {Staff} from './staff';
 
 @Component({
   selector: 'app-staff',
-  templateUrl: './staff.component.html',
-  styleUrls: ['./staff.component.css']
+  templateUrl: './staffs.component.html',
+  styleUrls: ['./staffs.component.css']
 })
-export class StaffComponent implements OnInit {
+export class StaffsComponent implements OnInit {
 
   staffMembers: Staff[];
 

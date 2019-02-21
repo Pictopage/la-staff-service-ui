@@ -4,8 +4,8 @@ import {LayoutComponent} from './layout/layout.component';
 import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
 import {RouterModule} from '@angular/router';
-import {StaffComponent} from './staff/staff.component';
-import {StaffService} from './staff/staff.service';
+import {StaffsComponent} from './staffs/staffs.component';
+import {StaffService} from './staffs/staff.service';
 import {ClientsComponent} from './clients/clients.component';
 import {ClientService} from './clients/client.service';
 import {ReportComponent} from './report/report.component';
@@ -21,7 +21,7 @@ import {ClientComponent} from './clients/client/client.component';
     LayoutComponent,
     HeaderComponent,
     FooterComponent,
-    StaffComponent,
+    StaffsComponent,
     ClientsComponent,
     ClientComponent,
     ReportComponent,
