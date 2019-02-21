@@ -1,3 +1,14 @@
-<p>
-  client-detail works!
-</p>
+<div class="card text-white bg-dark" style="width: 18rem;">
+  <div class="card-header">
+    {{client.name}} {{client.surname}}
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Dark card title</h5>
+    <ul class="list-group list-group-flush card-text">
+      <li class="list-group-item list-group-item-dark">{{client.id}}</li>
+      <li class="list-group-item list-group-item-dark">{{client.healthHistory}}</li>
+      <li class="list-group-item list-group-item-dark">{{client.healthStatus}}</li>
+      <li class="list-group-item list-group-item-dark">{{client.nhsNumber}}</li>
+    </ul>
+  </div>
+</div>
