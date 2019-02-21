@@ -16,6 +16,8 @@ import {ClientResolver} from './clients/client-resolver.service';
 import {Client} from './clients/client';
 import {ClientComponent} from './clients/client/client.component';
 import { StaffComponent } from './staffs/staff/staff.component';
+import { StaffDetailComponent } from './staffs/staff-detail/staff-detail.component';
+import {StaffResolver} from './staffs/staff-resolver.service';
 
 @NgModule({
   declarations: [
@@ -28,12 +30,14 @@ import { StaffComponent } from './staffs/staff/staff.component';
     ReportComponent,
     HomeComponent,
     ClientDetailComponent,
-    StaffComponent],
+    StaffComponent,
+    StaffDetailComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(
       [
-        {path: 'client', component: ClientsComponent}
+        {path: 'client', component: ClientsComponent},
+        {path: 'staff', component: StaffComponent}
       ]
     )
   ],
@@ -45,7 +49,8 @@ import { StaffComponent } from './staffs/staff/staff.component';
     Client,
     ClientService,
     ReportService,
-    ClientResolver
+    ClientResolver,
+    StaffResolver
   ]
 })
 export class UiModule {

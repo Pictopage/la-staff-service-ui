@@ -8,13 +8,19 @@ import {ClientResolver} from './ui/clients/client-resolver.service';
 import {ClientsComponent} from './ui/clients/clients.component';
 import {ClientComponent} from './ui/clients/client/client.component';
 import {StaffComponent} from './ui/staffs/staff/staff.component';
+import {StaffDetailComponent} from './ui/staffs/staff-detail/staff-detail.component';
+import {StaffResolver} from './ui/staffs/staff-resolver.service';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {
     path: 'staffs', component: StaffsComponent,
     children: [
-      {path: '', component: StaffComponent}
+      {path: '', component: StaffComponent},
+      {
+        path: ':id', component: StaffDetailComponent,
+        resolve: {staff: StaffResolver}
+      }
     ]
   },
   {
