@@ -15,6 +15,7 @@ import {ClientDetailComponent} from './clients/client-detail/client-detail.compo
 import {ClientResolver} from './clients/client-resolver.service';
 import {Client} from './clients/client';
 import {ClientComponent} from './clients/client/client.component';
+import { StaffComponent } from './staffs/staff/staff.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {ClientComponent} from './clients/client/client.component';
     ClientComponent,
     ReportComponent,
     HomeComponent,
-    ClientDetailComponent],
+    ClientDetailComponent,
+    StaffComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(
