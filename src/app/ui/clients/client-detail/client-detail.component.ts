@@ -10,7 +10,7 @@ import {Client} from '../client';
 export class ClientDetailComponent implements OnInit {
 
   client: Client;
-  clientProfile: String = 'CLIENT PROFILE';
+  clientProfile = 'CLIENT PROFILE';
 
   constructor(private route: ActivatedRoute) { }
 
