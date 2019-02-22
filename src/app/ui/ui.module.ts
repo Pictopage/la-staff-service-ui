@@ -18,6 +18,7 @@ import {ClientComponent} from './clients/client/client.component';
 import { StaffComponent } from './staffs/staff/staff.component';
 import { StaffDetailComponent } from './staffs/staff-detail/staff-detail.component';
 import {StaffResolver} from './staffs/staff-resolver.service';
+import { ReportComponent } from './reports/report/report.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {StaffResolver} from './staffs/staff-resolver.service';
     HomeComponent,
     ClientDetailComponent,
     StaffComponent,
-    StaffDetailComponent],
+    StaffDetailComponent,
+    ReportComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(
