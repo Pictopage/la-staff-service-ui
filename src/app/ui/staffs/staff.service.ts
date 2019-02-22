@@ -76,5 +76,9 @@ export class StaffService {
   getStaffMembers(): Observable<Staff[]> {
     return of(this.staffMembers);
   }
+
+  getStaffMember(id): Observable<Staff> {
+    return of(this.staffMembers.find(staff => staff.id === id));
+  }
 }
 
