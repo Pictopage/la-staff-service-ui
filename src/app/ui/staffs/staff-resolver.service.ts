@@ -10,7 +10,7 @@ export class StaffResolver implements Resolve<Staff> {
   constructor(private staffService: StaffService, route: Router) { }
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Staff | Observable<Staff> {
-    const id = route.params['id'];
+    const id = +route.params['id'];
     return this.staffService.getStaffMember(id);
   }
 }

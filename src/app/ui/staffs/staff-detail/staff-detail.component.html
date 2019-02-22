@@ -1,3 +1,15 @@
-<p>
-  staff-detail works!
-</p>
+<div class="card text-white bg-dark" style="width: 18rem;">
+  <div class="card-header">
+    {{staffProfile}}
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{staff.name}} {{staff.surname}}</h5>
+    <ul class="list-group list-group-flush card-text">
+      <li class="list-group-item list-group-item-dark">{{staff.id}}</li>
+      <li class="list-group-item list-group-item-dark">{{staff.address}}</li>
+      <li class="list-group-item list-group-item-dark">{{staff.profileSummary}}</li>
+      <li class="list-group-item list-group-item-dark">{{staff.role}}</li>
+      <li class="list-group-item list-group-item-dark">{{staff.payRate}}</li>
+    </ul>
+  </div>
+</div>

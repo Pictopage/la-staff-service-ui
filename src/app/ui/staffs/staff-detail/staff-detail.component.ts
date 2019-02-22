@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
+import {Staff} from '../staff';
 
 @Component({
   selector: 'app-staff-detail',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StaffDetailComponent implements OnInit {
 
-  constructor() { }
+  staff: Staff;
+  staffProfile: 'STAFF PROFILE';
+
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.route.data
+      .subscribe(
+        staff => this.staff = staff['staff']
+      );
   }
 
 }
