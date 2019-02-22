@@ -12,7 +12,7 @@
   </thead>
   <tbody class="text-center">
   <tr *ngFor="let staffMember of staffMembers">
-    <td>{{staffMember.id}}</td>
+    <td><a [routerLink]="['/staffs', staffMember.id]">{{staffMember.id}}</a></td>
     <td>{{staffMember.name}}</td>
     <td>{{staffMember.surname}}</td>
     <td>{{staffMember.address}}</td>
