@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {StaffsComponent} from './ui/staffs/staffs.component';
-import {ReportComponent} from './ui/report/report.component';
+import {ReportsComponent} from './ui/reports/reports.component';
 import {HomeComponent} from './ui/home/home.component';
 import {ClientDetailComponent} from './ui/clients/client-detail/client-detail.component';
 import {ClientResolver} from './ui/clients/client-resolver.service';
@@ -33,7 +33,7 @@ const routes: Routes = [
       }
     ]
   },
-  {path: 'reports', component: ReportComponent}
+  {path: 'reports', component: ReportsComponent}
 ];
 
 @NgModule({

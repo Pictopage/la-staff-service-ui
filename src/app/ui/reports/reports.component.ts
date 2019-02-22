@@ -4,10 +4,10 @@ import {ReportService} from './report.service';
 
 @Component({
   selector: 'app-report',
-  templateUrl: './report.component.html',
-  styleUrls: ['./report.component.css']
+  templateUrl: './reports.component.html',
+  styleUrls: ['./reports.component.css']
 })
-export class ReportComponent implements OnInit {
+export class ReportsComponent implements OnInit {
 
   allReports: Report[];
 

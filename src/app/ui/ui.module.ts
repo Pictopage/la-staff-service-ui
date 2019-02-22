@@ -8,9 +8,9 @@ import {StaffsComponent} from './staffs/staffs.component';
 import {StaffService} from './staffs/staff.service';
 import {ClientsComponent} from './clients/clients.component';
 import {ClientService} from './clients/client.service';
-import {ReportComponent} from './report/report.component';
+import {ReportsComponent} from './reports/reports.component';
 import {HomeComponent} from './home/home.component';
-import {ReportService} from './report/report.service';
+import {ReportService} from './reports/report.service';
 import {ClientDetailComponent} from './clients/client-detail/client-detail.component';
 import {ClientResolver} from './clients/client-resolver.service';
 import {Client} from './clients/client';
@@ -27,7 +27,7 @@ import {StaffResolver} from './staffs/staff-resolver.service';
     StaffsComponent,
     ClientsComponent,
     ClientComponent,
-    ReportComponent,
+    ReportsComponent,
     HomeComponent,
     ClientDetailComponent,
     StaffComponent,
