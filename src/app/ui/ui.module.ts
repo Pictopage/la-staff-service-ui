@@ -29,6 +29,7 @@ import { ReportComponent } from './reports/report/report.component';
     ClientsComponent,
     ClientComponent,
     ReportsComponent,
+    ReportComponent,
     HomeComponent,
     ClientDetailComponent,
     StaffComponent,

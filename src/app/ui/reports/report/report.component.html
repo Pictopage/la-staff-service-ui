@@ -1,3 +1,22 @@
-<p>
-  report works!
-</p>
+<table class="table table-dark table-hover">
+  <thead class="text-center">
+  <tr>
+    <th scope="col">ID</th>
+    <th scope="col">GROUP-ID</th>
+    <th scope="col">GROUP TYPE</th>
+    <th scope="col">NO. OF HOURS</th>
+    <th scope="col">MISSED CALLS</th>
+    <th scope="col">REGION</th>
+  </tr>
+  </thead>
+  <tbody class="text-center">
+  <tr *ngFor="let report of allReports">
+    <td>{{report.id}}</td>
+    <td>{{report.groupId}}</td>
+    <td>{{report.groupType}}</td>
+    <td>{{report.numberOfHours}}</td>
+    <td>{{report.missedCalls}}</td>
+    <td>{{report.region}}</td>
+  </tr>
+  </tbody>
+</table>
