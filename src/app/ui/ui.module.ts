@@ -19,6 +19,7 @@ import { StaffComponent } from './staffs/staff/staff.component';
 import { StaffDetailComponent } from './staffs/staff-detail/staff-detail.component';
 import {StaffResolver} from './staffs/staff-resolver.service';
 import { ReportComponent } from './reports/report/report.component';
+import {ReportResolver} from './reports/report-resolver.service';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { ReportComponent } from './reports/report/report.component';
     ClientService,
     ReportService,
     ClientResolver,
-    StaffResolver
+    StaffResolver,
+    ReportResolver
   ]
 })
 export class UiModule {
