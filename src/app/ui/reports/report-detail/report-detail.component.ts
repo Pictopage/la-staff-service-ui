@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Report} from '../report';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-report-detail',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReportDetailComponent implements OnInit {
 
-  constructor() { }
+  report: Report;
+  reportProfile = 'Report PROFILE';
+
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.route.data
+      .subscribe(
+        report => this.report = report['report']
+      );
   }
 
 }
