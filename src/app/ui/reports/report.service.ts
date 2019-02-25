@@ -8,6 +8,7 @@ export class ReportService {
   private allRetrievedReports: Report[] = [
     {
       id: 1234,
+      title: 'Some Title',
       groupId: '4411',
       groupType: 'TYPE A',
       numberOfHours: '100',
@@ -16,6 +17,7 @@ export class ReportService {
     },
     {
       id: 3658,
+      title: 'Some Title',
       groupId: '4411',
       groupType: 'TYPE A',
       numberOfHours: '100',
@@ -24,6 +26,7 @@ export class ReportService {
     },
     {
       id: 7764,
+      title: 'Some Title',
       groupId: '4411',
       groupType: 'TYPE A',
       numberOfHours: '100',
@@ -32,6 +35,7 @@ export class ReportService {
     },
     {
       id: 7764,
+      title: 'Some Title',
       groupId: '4411',
       groupType: 'TYPE A',
       numberOfHours: '100',

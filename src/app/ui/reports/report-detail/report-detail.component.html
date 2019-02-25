@@ -1,3 +1,28 @@
-<p>
-  report-detail works!
-</p>
+<div class="card text-white bg-dark" style="width: 18rem;">
+  <div class="card-header">
+    {{reportProfile}}
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{report.title}}</h5>
+    <ul class="list-group list-group-flush card-text">
+      <li class="list-group-item list-group-item-dark">{{report.id}}</li>
+      <li class="list-group-item list-group-item-dark">{{report.healthHistory}}</li>
+      <li class="list-group-item list-group-item-dark">{{report.healthStatus}}</li>
+      <li class="list-group-item list-group-item-dark">{{report.nhsNumber}}</li>
+    </ul>
+  </div>
+</div>
+
+<!-- NAVIGATION BUTTONS-->
+<div class="container">
+  <div class="row">
+    <div class="col text-center">
+      <a class="btn btn-large btn-danger" [routerLink]="['']">
+        <i class="icon-flag icon-2x pull-left"></i> HOME</a>
+    </div>
+    <div class="col text-center">
+      <a class="btn btn-large btn-danger" [routerLink]="['/reports']">
+        <i class="icon-flag icon-2x pull-left"></i> BACK</a>
+    </div>
+  </div>
+</div>

@@ -10,7 +10,7 @@ import {ActivatedRoute} from '@angular/router';
 export class ReportDetailComponent implements OnInit {
 
   report: Report;
-  reportProfile = 'Report PROFILE';
+  reportProfile = 'Report Profile';
 
   constructor(private route: ActivatedRoute) { }
 

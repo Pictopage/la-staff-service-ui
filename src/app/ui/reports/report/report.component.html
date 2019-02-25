@@ -2,6 +2,7 @@
   <thead class="text-center">
   <tr>
     <th scope="col">ID</th>
+    <th scope="col">REPORT TITLE</th>
     <th scope="col">GROUP-ID</th>
     <th scope="col">GROUP TYPE</th>
     <th scope="col">NO. OF HOURS</th>
@@ -11,7 +12,8 @@
   </thead>
   <tbody class="text-center">
   <tr *ngFor="let report of allReports">
-    <td>{{report.id}}</td>
+    <td><a [routerLink]="['/reports', report.id]">{{report.id}}</a></td>
+    <td>{{report.title}}</td>
     <td>{{report.groupId}}</td>
     <td>{{report.groupType}}</td>
     <td>{{report.numberOfHours}}</td>
