@@ -43,7 +43,8 @@ import { ReportDetailComponent } from './reports/report-detail/report-detail.com
     RouterModule.forChild(
       [
         {path: 'client', component: ClientsComponent},
-        {path: 'staff', component: StaffComponent}
+        {path: 'staff', component: StaffComponent},
+        {path: 'report', component: ReportComponent}
       ]
     )
   ],
