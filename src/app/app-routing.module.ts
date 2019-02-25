@@ -11,6 +11,8 @@ import {StaffComponent} from './ui/staffs/staff/staff.component';
 import {StaffDetailComponent} from './ui/staffs/staff-detail/staff-detail.component';
 import {StaffResolver} from './ui/staffs/staff-resolver.service';
 import {ReportComponent} from './ui/reports/report/report.component';
+import {ReportDetailComponent} from './ui/reports/report-detail/report-detail.component';
+import {ReportResolver} from './ui/reports/report-resolver.service';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -37,7 +39,11 @@ const routes: Routes = [
   {
     path: 'reports', component: ReportsComponent,
     children: [
-      {path: '', component: ReportComponent}
+      {path: '', component: ReportComponent},
+      {
+        path: ':id', component: ReportDetailComponent,
+        resolve: {report: ReportResolver}
+      }
     ]
   }
 ];
