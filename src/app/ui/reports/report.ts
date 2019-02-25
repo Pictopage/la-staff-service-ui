@@ -1,5 +1,5 @@
 export class Report {
-  id: string;
+  id: number;
   groupId: string;
   groupType: string;
   numberOfHours: string;

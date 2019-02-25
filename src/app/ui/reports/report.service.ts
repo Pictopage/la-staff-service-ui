@@ -7,7 +7,7 @@ export class ReportService {
 
   private allRetrievedReports: Report[] = [
     {
-      id: '1234',
+      id: 1234,
       groupId: '4411',
       groupType: 'TYPE A',
       numberOfHours: '100',
@@ -15,7 +15,7 @@ export class ReportService {
       region: 'Surrey'
     },
     {
-      id: '3658',
+      id: 3658,
       groupId: '4411',
       groupType: 'TYPE A',
       numberOfHours: '100',
@@ -23,7 +23,7 @@ export class ReportService {
       region: 'Hampshire'
     },
     {
-      id: '7764',
+      id: 7764,
       groupId: '4411',
       groupType: 'TYPE A',
       numberOfHours: '100',
@@ -31,7 +31,7 @@ export class ReportService {
       region: 'Berkshire'
     },
     {
-      id: '7764',
+      id: 7764,
       groupId: '4411',
       groupType: 'TYPE A',
       numberOfHours: '100',
@@ -42,5 +42,9 @@ export class ReportService {
 
   getAllReports(): Observable<Report[]> {
     return of(this.allRetrievedReports);
+  }
+
+  getReport(id: number): Observable<Report> {
+    return of(this.allRetrievedReports.find(report => report.id === id));
   }
 }
