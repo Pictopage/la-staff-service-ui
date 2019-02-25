@@ -20,6 +20,7 @@ import { StaffDetailComponent } from './staffs/staff-detail/staff-detail.compone
 import {StaffResolver} from './staffs/staff-resolver.service';
 import { ReportComponent } from './reports/report/report.component';
 import {ReportResolver} from './reports/report-resolver.service';
+import { ReportDetailComponent } from './reports/report-detail/report-detail.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import {ReportResolver} from './reports/report-resolver.service';
     ClientDetailComponent,
     StaffComponent,
     StaffDetailComponent,
-    ReportComponent],
+    ReportComponent,
+    ReportDetailComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(
