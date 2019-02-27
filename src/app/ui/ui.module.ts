@@ -21,6 +21,8 @@ import {StaffResolver} from './staffs/staff-resolver.service';
 import { ReportComponent } from './reports/report/report.component';
 import {ReportResolver} from './reports/report-resolver.service';
 import { ReportDetailComponent } from './reports/report-detail/report-detail.component';
+import {MatSortModule} from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -37,9 +39,12 @@ import { ReportDetailComponent } from './reports/report-detail/report-detail.com
     StaffComponent,
     StaffDetailComponent,
     ReportComponent,
-    ReportDetailComponent],
+    ReportDetailComponent
+  ],
   imports: [
     CommonModule,
+    MatSortModule,
+    BrowserAnimationsModule,
     RouterModule.forChild(
       [
         {path: 'client', component: ClientsComponent},

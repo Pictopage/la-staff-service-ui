@@ -13,7 +13,9 @@ export class ClientComponent implements OnInit {
   clientMembers: Client[];
   sortedMembersData: Client[];
 
-  constructor(private clientService: ClientService) { }
+  constructor(private clientService: ClientService) {
+    this.sortedMembersData = this.clientService.clientMembers.slice();
+  }
 
   ngOnInit() {
     this.retrieveAllClients();

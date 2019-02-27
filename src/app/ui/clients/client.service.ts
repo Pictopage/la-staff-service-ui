@@ -5,7 +5,7 @@ import {Injectable} from '@angular/core';
 @Injectable()
 export class ClientService {
 
-  private clientMembers: Client[] = [
+  clientMembers: Client[] = [
     {
       id: 12345,
       name: 'Jeremy',
