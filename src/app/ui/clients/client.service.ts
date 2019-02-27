@@ -72,7 +72,8 @@ export class ClientService {
     }
   ];
 
-  constructor() { }
+  constructor() {
+  }
 
   getAllClients(): Observable<Client[]> {
     return of(this.clientMembers);

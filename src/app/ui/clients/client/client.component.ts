@@ -36,13 +36,6 @@ export class ClientComponent implements OnInit {
       return;
     }
 
-    // id: number;
-    // name: string;
-    // surname: string;
-    // nhsNumber: string;
-    // healthStatus: string;
-    // healthHistory: string;
-
     this.sortedMembersData = data.sort((a, b) => {
       const isAsc = sort.direction === 'asc';
       switch (sort.active) {
