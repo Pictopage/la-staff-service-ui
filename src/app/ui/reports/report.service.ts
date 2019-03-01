@@ -5,7 +5,7 @@ import {Report} from './report';
 @Injectable()
 export class ReportService {
 
-  private allRetrievedReports: Report[] = [
+  allRetrievedReports: Report[] = [
     {
       id: 1234,
       title: 'Some Title',

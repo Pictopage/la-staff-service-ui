@@ -13,7 +13,9 @@ export class ReportComponent implements OnInit {
   allReports: Report[];
   sortedReports: Report[];
 
-  constructor(private reportService: ReportService) { }
+  constructor(private reportService: ReportService) {
+    this.sortedReports = this.reportService.allRetrievedReports.slice();
+  }
 
   ngOnInit() {
     this.getAllReports();
