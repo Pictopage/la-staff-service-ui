@@ -21,7 +21,7 @@ export class ReportService {
       groupId: '4411',
       groupType: 'TYPE A',
       numberOfHours: '100',
-      missedCalls: '15',
+      missedCalls: '5',
       region: 'Hampshire'
     },
     {
@@ -30,7 +30,7 @@ export class ReportService {
       groupId: '4411',
       groupType: 'TYPE A',
       numberOfHours: '100',
-      missedCalls: '15',
+      missedCalls: '30',
       region: 'Berkshire'
     },
     {
@@ -39,7 +39,7 @@ export class ReportService {
       groupId: '4411',
       groupType: 'TYPE A',
       numberOfHours: '100',
-      missedCalls: '15',
+      missedCalls: '27',
       region: 'London'
     }
   ];
